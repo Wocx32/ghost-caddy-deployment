@@ -12,6 +12,7 @@ services:
       - caddy_config:/config
     environment:
       - DOMAIN=${DOMAIN}
+      - EMAIL=${EMAIL}
   
   ghost:
     image: ghost:5-alpine
